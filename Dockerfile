@@ -26,4 +26,6 @@ ENV ROW_LIMIT=5000 \
 COPY caravel_config.py /caravel_config.py
 COPY caravel.db /caravel/caravel.db
 
+EXPOSE 8088
+
 CMD ["caravel", "runserver"]
